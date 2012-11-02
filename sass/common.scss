@@ -1,6 +1,6 @@
 @import "base";
-/* HOW TO USE SPRITES*/
-$icons: sprite-map("icons/*.png");
+/* HOW TO USE SPRITES, see _base.scss*/
+
 .whatever{@include sized-sprite($icons, badge_hit);}
 
 

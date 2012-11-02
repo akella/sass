@@ -1,12 +1,10 @@
-/*когда включать версию для айфона для respond-to*/
-/*когда включать широкую версию*/
 /* BACKGROUND SIZE */
 /* ROTATE*/
 /* TRANSITION */
-/* HOW TO USE SPRITES*/
+/* HOW TO USE SPRITES, see _base.scss*/
 /* line 4, ../sass/common.scss */
 .whatever {
-  background: url('../img/icons-s4235427e90.png') 0 -144px no-repeat;
+  background: url('../img/icons-s95b22fd45d.png') 0 -164px no-repeat;
   width: 72px;
   height: 72px;
 }
