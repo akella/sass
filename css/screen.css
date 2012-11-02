@@ -8,20 +8,28 @@
   width: 72px;
   height: 72px;
 }
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  /* line 4, /Users/akella/Desktop/git/sass/sass/common.scss */
+  .whatever {
+    background: url('../img/icons-s95b22fd45d.png') 0 0 no-repeat;
+    width: 72px;
+    height: 72px;
+  }
+}
 
-/* line 9, /Users/akella/Desktop/git/sass/sass/common.scss */
+/* line 14, /Users/akella/Desktop/git/sass/sass/common.scss */
 * {
   margin: 0;
   padding: 0;
   -webkit-text-size-adjust: none;
 }
 
-/* line 10, /Users/akella/Desktop/git/sass/sass/common.scss */
+/* line 15, /Users/akella/Desktop/git/sass/sass/common.scss */
 .out {
   width: 100%;
 }
 
-/* line 13, /Users/akella/Desktop/git/sass/sass/common.scss */
+/* line 18, /Users/akella/Desktop/git/sass/sass/common.scss */
 body {
   font-family: Arial,sans-serif;
   font-weight: normal;
@@ -30,16 +38,16 @@ body {
 }
 
 /*resets*/
-/* line 22, /Users/akella/Desktop/git/sass/sass/common.scss */
+/* line 27, /Users/akella/Desktop/git/sass/sass/common.scss */
 a img, fieldset {
   border: none;
 }
 
-/* line 25, /Users/akella/Desktop/git/sass/sass/common.scss */
+/* line 30, /Users/akella/Desktop/git/sass/sass/common.scss */
 a {
   color: #00919e;
 }
-/* line 27, /Users/akella/Desktop/git/sass/sass/common.scss */
+/* line 32, /Users/akella/Desktop/git/sass/sass/common.scss */
 a:hover {
   text-decoration: none;
 }
