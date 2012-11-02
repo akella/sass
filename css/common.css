@@ -1,0 +1,47 @@
+/*когда включать версию для айфона для respond-to*/
+/*когда включать широкую версию*/
+/* BACKGROUND SIZE */
+/* ROTATE*/
+/* TRANSITION */
+/* HOW TO USE SPRITES*/
+/* line 4, ../sass/common.scss */
+.whatever {
+  background: url('../img/icons-s4235427e90.png') 0 -144px no-repeat;
+  width: 72px;
+  height: 72px;
+}
+
+/* line 9, ../sass/common.scss */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: none;
+}
+
+/* line 10, ../sass/common.scss */
+.out {
+  width: 100%;
+}
+
+/* line 13, ../sass/common.scss */
+body {
+  font-family: Arial,sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+/*resets*/
+/* line 22, ../sass/common.scss */
+a img, fieldset {
+  border: none;
+}
+
+/* line 25, ../sass/common.scss */
+a {
+  color: #00919e;
+}
+/* line 27, ../sass/common.scss */
+a:hover {
+  text-decoration: none;
+}

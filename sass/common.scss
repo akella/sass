@@ -1,0 +1,33 @@
+@import "base";
+/* HOW TO USE SPRITES*/
+$icons: sprite-map("icons/*.png");
+.whatever{@include sized-sprite($icons, badge_hit);}
+
+
+
+
+*{margin:0;padding:0;-webkit-text-size-adjust: none; }
+.out{
+	width:100%;
+}
+body{
+	font: {
+	    family: Arial,sans-serif;
+	    weight: normal;
+	    size: 12px;
+	  	}
+	line-height:1.2;
+}
+/*resets*/
+a img,fieldset{
+	border:none;
+	}
+a{
+	color:#00919e;
+	&:hover{
+		text-decoration:none;
+	}
+}
+
+
+
