@@ -15,20 +15,20 @@ $break-large: 1180px;
     @media only screen and (min-width: $break-large) { @content; }
   }
 }
-
+// retina bg
 @mixin retina{
   @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
     @content;
   }
 }
 
-/* BACKGROUND SIZE */
+// BACKGROUND SIZE
 @mixin background-size($width: 100%, $height: 100%) {
      -moz-background-size: $width $height;
   -webkit-background-size: $width $height;
           background-size: $width $height;
 }
-/* ROTATE*/
+// ROTATE
 @mixin rotate($deg: 0, $m11: 0, $m12: 0, $m21: 0, $m22: 0) {
      -moz-transform: rotate($deg + deg);
        -o-transform: rotate($deg + deg);
@@ -40,7 +40,7 @@ $break-large: 1180px;
                zoom: 1;
 }
 
-/* TRANSITION */
+// TRANSITION
 @mixin transition($what: all, $length: 1s, $easing: ease-in-out) {
     -moz-transition:    $what $length $easing;
     -o-transition:      $what $length $easing;
@@ -70,6 +70,19 @@ $break-large: 1180px;
     visibility: hidden;
     }
 }
+// placeholder color
+@mixin input-placeholder($color) {
+  &.placeholder {
+    color: $color;
+  }
+  &:-moz-placeholder {
+    color: $color;
+  }
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+}
+// sized sprites
 @mixin image-size($path){
   width: image-width($path);
   height: image-height($path);
