@@ -1,16 +1,4 @@
 /* default layout */
-/* line 4, ../sass/layouts.scss */
-.l {
-  width: 100%;
-  display: inline-block;
-}
-/* line 8, ../sass/layouts.scss */
-.l .l-col1 {
-  float: left;
-  width: 20%;
-}
-/* line 13, ../sass/layouts.scss */
-.l .l-col2 {
-  float: right;
-  width: 70%;
-}
+.l { width: 100%; display: inline-block; }
+.l .l-col1 { float: left; width: 20%; }
+.l .l-col2 { float: right; width: 70%; }

@@ -1,72 +1,44 @@
 /* HOW TO USE SPRITES, see _base.scss*/
-/* line 4, /Users/akella/Desktop/git/sass/sass/common.scss */
-.whatever {
-  background: url('../img/icons-s95b22fd45d.png') 0 -164px no-repeat;
-  width: 72px;
-  height: 72px;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
-  /* line 4, /Users/akella/Desktop/git/sass/sass/common.scss */
-  .whatever {
-    background: url('../img/icons-s95b22fd45d.png') 0 0 no-repeat;
-    width: 72px;
-    height: 72px;
-  }
-}
+.whatever { background: url('../img/icons-s95b22fd45d.png') 0 -164px no-repeat; width: 72px; height: 72px; }
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) { .whatever { background: url('../img/icons-s95b22fd45d.png') 0 0 no-repeat; width: 72px; height: 72px; } }
 
-/* line 14, /Users/akella/Desktop/git/sass/sass/common.scss */
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-text-size-adjust: none;
-}
+@-moz-keyframes anim-1 { 0% { background: #fff; }
+  50% { background: #000; }
+  100% { background: #fff; } }
 
-/* line 15, /Users/akella/Desktop/git/sass/sass/common.scss */
-.out {
-  width: 100%;
-}
+@-webkit-keyframes anim-1 { 0% { background: #fff; }
+  50% { background: #000; }
+  100% { background: #fff; } }
 
-/* line 18, /Users/akella/Desktop/git/sass/sass/common.scss */
-body {
-  font-family: Arial,sans-serif;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 1.2;
-}
+@-o-keyframes anim-1 { 0% { background: #fff; }
+  50% { background: #000; }
+  100% { background: #fff; } }
+
+@-ms-keyframes anim-1 { 0% { background: #fff; }
+  50% { background: #000; }
+  100% { background: #fff; } }
+
+@keyframes anim-1 { 0% { background: #fff; }
+  50% { background: #000; }
+  100% { background: #fff; } }
+
+body:hover { -webkit-animation: anim-1 2s linear infinite; -moz-animation: anim-1 2s linear infinite; -ms-animation: anim-1 2s linear infinite; -o-animation: anim-1 2s linear infinite; animation: anim-1 2s linear infinite; }
+
+* { margin: 0; padding: 0; -webkit-text-size-adjust: none; }
+
+.out { width: 100%; }
+
+body { font-family: Arial,sans-serif; font-weight: normal; font-size: 12px; line-height: 1.2; }
 
 /*resets*/
-/* line 27, /Users/akella/Desktop/git/sass/sass/common.scss */
-a img, fieldset {
-  border: none;
-}
+a img, fieldset { border: none; }
 
-/* line 30, /Users/akella/Desktop/git/sass/sass/common.scss */
-a {
-  color: #00919e;
-}
-/* line 32, /Users/akella/Desktop/git/sass/sass/common.scss */
-a:hover {
-  text-decoration: none;
-}
+a { color: #00919e; }
+a:hover { text-decoration: none; }
 
 /* default layout */
-/* line 4, /Users/akella/Desktop/git/sass/sass/layouts.scss */
-.l {
-  width: 100%;
-  display: inline-block;
-}
-/* line 8, /Users/akella/Desktop/git/sass/sass/layouts.scss */
-.l .l-col1 {
-  float: left;
-  width: 20%;
-}
-/* line 13, /Users/akella/Desktop/git/sass/sass/layouts.scss */
-.l .l-col2 {
-  float: right;
-  width: 70%;
-}
+.l { width: 100%; display: inline-block; }
+.l .l-col1 { float: left; width: 20%; }
+.l .l-col2 { float: right; width: 70%; }
 
-/* line 2, /Users/akella/Desktop/git/sass/sass/ie.scss */
-.lteie8 body {
-  background: red;
-}
+.lteie8 body { background: red; }

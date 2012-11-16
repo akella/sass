@@ -7,7 +7,21 @@
 		@include sized-sprite($icons, badge_new);
 	}
 }
-
+//animation example
+@include keyframes(anim-1) {
+	0% {
+		background:#fff;
+	}
+	50% {
+		background:#000;
+	}
+	100%{
+		background:#fff;
+	}
+}
+body:hover{
+	@include animation(anim-1 2s linear infinite);
+}
 
 
 
