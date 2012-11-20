@@ -1,6 +1,5 @@
 @import "base";
-/* HOW TO USE SPRITES, see _base.scss*/
-
+/* HOW TO USE SPRITES */
 .whatever{
 	@include sized-sprite($icons, badge_hit);
 	@include retina{

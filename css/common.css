@@ -1,4 +1,4 @@
-/* HOW TO USE SPRITES, see _base.scss*/
+/* HOW TO USE SPRITES */
 .whatever { background: url('../img/icons-s95b22fd45d.png') 0 -164px no-repeat; width: 72px; height: 72px; }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) { .whatever { background: url('../img/icons-s95b22fd45d.png') 0 0 no-repeat; width: 72px; height: 72px; } }
 
