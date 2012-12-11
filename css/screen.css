@@ -1,36 +1,7 @@
-/* HOW TO USE SPRITES */
-.whatever { background: url('../img/icons-s95b22fd45d.png') 0 -164px no-repeat; width: 72px; height: 72px; }
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) { .whatever { background: url('../img/icons-s95b22fd45d.png') 0 0 no-repeat; width: 72px; height: 72px; } }
-
-@-moz-keyframes anim-1 { 0% { background: #fff; }
-  50% { background: #000; }
-  100% { background: #fff; } }
-
-@-webkit-keyframes anim-1 { 0% { background: #fff; }
-  50% { background: #000; }
-  100% { background: #fff; } }
-
-@-o-keyframes anim-1 { 0% { background: #fff; }
-  50% { background: #000; }
-  100% { background: #fff; } }
-
-@-ms-keyframes anim-1 { 0% { background: #fff; }
-  50% { background: #000; }
-  100% { background: #fff; } }
-
-@keyframes anim-1 { 0% { background: #fff; }
-  50% { background: #000; }
-  100% { background: #fff; } }
-
-body:hover { -webkit-animation: anim-1 2s linear infinite; -moz-animation: anim-1 2s linear infinite; -ms-animation: anim-1 2s linear infinite; -o-animation: anim-1 2s linear infinite; animation: anim-1 2s linear infinite; }
-
 * { margin: 0; padding: 0; -webkit-text-size-adjust: none; }
 
-.out { width: 100%; }
+body { font-family: Arial,sans-serif; font-weight: normal; font-size: 12px; line-height: 1.4; }
 
-body { font-family: Arial,sans-serif; font-weight: normal; font-size: 12px; line-height: 1.2; }
-
-/*resets*/
 a img, fieldset { border: none; }
 
 a { color: #00919e; }

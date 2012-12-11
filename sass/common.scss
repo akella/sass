@@ -1,42 +1,40 @@
 @import "base";
-/* HOW TO USE SPRITES */
-.whatever{
-	@include sized-sprite($icons, badge_hit);
-	@include retina{
-		@include sized-sprite($icons, badge_new);
-	}
-}
-//animation example
-@include keyframes(anim-1) {
-	0% {
-		background:#fff;
-	}
-	50% {
-		background:#000;
-	}
-	100%{
-		background:#fff;
-	}
-}
-body:hover{
-	@include animation(anim-1 2s linear infinite);
-}
+// =======Sprites
+// .whatever{
+// 	@include sized-sprite($icons, badge_hit);
+// 	@include retina{
+// 		@include sized-sprite($icons, badge_new);
+// 	}
+// }
+// =======animation example
+// @include keyframes(rotate) {
+//    from {
+//       @include rotate(0);
+//    }
+//    to {
+//       @include rotate(360);
+//    }
+// }
+// body:hover{
+// 	@include animation(rotate 200s linear infinite);
+// }
+// ========gradient example
+// body{
+// @include background-image(linear-gradient(#232323, #5c5c5c));
+// }
 
 
 
 *{margin:0;padding:0;-webkit-text-size-adjust: none; }
-.out{
-	width:100%;
-}
 body{
 	font: {
 	    family: Arial,sans-serif;
 	    weight: normal;
 	    size: 12px;
 	  	}
-	line-height:1.2;
+	line-height:1.4;
 }
-/*resets*/
+// resets
 a img,fieldset{
 	border:none;
 	}
@@ -46,6 +44,7 @@ a{
 		text-decoration:none;
 	}
 }
+// common styles
 
 
 
