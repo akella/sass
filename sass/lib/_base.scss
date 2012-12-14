@@ -72,7 +72,7 @@ $break-large: 1180px;
   *zoom: 1;
 }
 // placeholder color
-@mixin input-placeholder($color) {
+@mixin placeholder-color($color) {
   &.placeholder {
     color: $color;
   }
