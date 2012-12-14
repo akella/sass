@@ -62,7 +62,7 @@ $break-large: 1180px;
 // }
 %clr{
   &:before,
-    .&:after {
+  &:after {
     content: " ";
     display: table;
   }
