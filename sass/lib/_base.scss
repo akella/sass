@@ -45,20 +45,31 @@ $break-large: 1180px;
     transition:         $what $length $easing;
 }
 
-// image replacement
-@mixin hide-text{
+// image replacement extend
+%hide-text{
     font: 0/0 a;
     text-shadow: none;
     color: transparent;
 }
-@mixin clr{
-  &:after{
-    content: ".";
-    display: block;
-    height: 0;
+// %clr{
+//   &:after{
+//     content: ".";
+//     display: block;
+//     height: 0;
+//     clear: both;
+//     visibility: hidden;
+//     }
+// }
+%clr{
+  &:before,
+    .&:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
     clear: both;
-    visibility: hidden;
-    }
+  }
+  *zoom: 1;
 }
 // placeholder color
 @mixin input-placeholder($color) {
