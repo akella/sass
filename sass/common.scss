@@ -44,7 +44,7 @@ a{
 		text-decoration:none;
 	}
 }
-// common styles
+// common styles, these could be attached to any block with "@extend %wyswyg;"
 %wyswyg{
    p{
       margin-bottom: 1em;
