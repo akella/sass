@@ -83,6 +83,18 @@ $break-large: 1180px;
     color: $color;
   }
 }
+
+@mixin gray(){
+  filter: url("../img/filter.svg#grayscale");
+  filter: gray;
+  -o-filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(grayScale=1);
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(grayScale=1)";
+}
+
 // sized sprites
 @mixin image-size($path){
   width: image-width($path);
