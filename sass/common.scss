@@ -26,6 +26,7 @@
 
 
 *{margin:0;padding:0;-webkit-text-size-adjust: none; }
+img{@extend %gray;}
 body{
 	font: {
 	    family: Arial,sans-serif;
