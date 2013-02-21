@@ -1,4 +1,5 @@
 @import "base";
+// SHORT HOWTO
 // =======Sprites
 // .whatever{
 // 	@include sized-sprite($icons, badge_hit);
@@ -15,6 +16,7 @@
 //       @include rotate(360);
 //    }
 // }
+// =========ANIMATIONS usage
 // body:hover{
 // 	@include animation(rotate 200s linear infinite);
 // }
@@ -22,17 +24,18 @@
 // body{
 // @include background-image(linear-gradient(#232323, #5c5c5c));
 // }
+// =========making bw-images
+// img{@extend %gray;}
 
 
 
 *{margin:0;padding:0;-webkit-text-size-adjust: none; }
-img{@extend %gray;}
 body{
 	font: {
-	    family: Arial,sans-serif;
-	    weight: normal;
-	    size: 12px;
-	  	}
+		family: Arial,sans-serif;
+		weight: normal;
+		size: 12px;
+	}
 	line-height:1.4;
 }
 // resets
@@ -47,28 +50,26 @@ a{
 }
 // common styles, these could be attached to any block with "@extend %wyswyg;"
 %wyswyg{
-   p{
-      margin-bottom: 1em;
-   }
-   ul,ol{
-      margin: 1em 2em;
-      list-style: disc;
-   }
-   ol{
-      list-style: decimal;
-   }
-   blockquote{
-      margin: 1em 2em;
-   }
-   table{
-   	border-spacing: 0;
-   	border-collapse: collapse;
-   	width: 100%;
-      td{
-         border: 1px solid #ccc;
-         padding: 5px;
-      }
-   }
+	p{
+		margin-bottom: 1em;
+	}
+	ul,ol{
+		margin: 1em 2em;
+		list-style: disc;
+	}
+	ol{
+		list-style: decimal;
+	}
+	blockquote{
+		margin: 1em 2em;
+	}
+	table{
+		border-spacing: 0;
+		border-collapse: collapse;
+		width: 100%;
+		td{
+			border: 1px solid #ccc;
+			padding: 5px;
+		}
+	}
 }
-
-

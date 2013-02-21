@@ -1,15 +1,15 @@
 @import "compass/css3";
 
-// responsive
+// responsive example, needs to be edited
 $break-small: 500px;
 $break-large: 1180px;
 @mixin respond-to($media) {
-  @if $media == pda {
-    @media only screen and (max-width: $break-small) { @content; }
-  }
-  @else if $media == wide {
-    @media only screen and (min-width: $break-large) { @content; }
-  }
+	@if $media == pda {
+		@media only screen and (max-width: $break-small) { @content; }
+	}
+	@else if $media == wide {
+		@media only screen and (min-width: $break-large) { @content; }
+	}
 }
 // retina bg
 @mixin retina{
@@ -38,18 +38,18 @@ $break-large: 1180px;
 
 // TRANSITION
 @mixin transition($what: all, $length: 1s, $easing: ease-in-out) {
-    -moz-transition:    $what $length $easing;
-    -o-transition:      $what $length $easing;
-    -webkit-transition: $what $length $easing;
-    -ms-transition:     $what $length $easing;
-    transition:         $what $length $easing;
+	-moz-transition:    $what $length $easing;
+	-o-transition:      $what $length $easing;
+	-webkit-transition: $what $length $easing;
+	-ms-transition:     $what $length $easing;
+	transition:         $what $length $easing;
 }
 
 // image replacement extend
 %hide-text{
-    font: 0/0 a;
-    text-shadow: none;
-    color: transparent;
+	font: 0/0 a;
+	text-shadow: none;
+	color: transparent;
 }
 // %clr{
 //   &:after{
@@ -61,62 +61,75 @@ $break-large: 1180px;
 //     }
 // }
 %clr{
-  &:before,
-  &:after {
-    content: " ";
-    display: table;
-  }
-  &:after {
-    clear: both;
-  }
-  *zoom: 1;
+	&:before,
+	&:after {
+		content: " ";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+	*zoom: 1;
 }
 // placeholder color
 @mixin placeholder-color($color) {
-  &.placeholder {
-    color: $color;
-  }
-  &:-moz-placeholder {
-    color: $color;
-  }
-  &::-webkit-input-placeholder {
-    color: $color;
-  }
+	&.placeholder {
+		color: $color;
+	}
+	&:-moz-placeholder {
+		color: $color;
+	}
+	&::-webkit-input-placeholder {
+		color: $color;
+	}
 }
 
-@mixin gray(){
-  filter: url(../img/filter.svg#grayscale);
-  filter: gray;
-  -o-filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  filter: grayscale(100%);
-  filter: progid:DXImageTransform.Microsoft.BasicImage(grayScale=1);
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(grayScale=1)";
-}
 %gray{
-  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+ */
-  filter: gray; /* IE6-9 */
-  -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
-  filter: progid:DXImageTransform.Microsoft.BasicImage(grayScale=1);
-   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(grayScale=1)";
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+ */
+	filter: gray; /* IE6-9 */
+	-webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+	filter: progid:DXImageTransform.Microsoft.BasicImage(grayScale=1);
+	-ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(grayScale=1)";
 }
 %gray-half{
-  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'saturate\' values=\'0.5\'/></filter></svg>#grayscale"); /* Firefox 10+ */
-  filter: gray alpha(opacity=50); /* IE6-9 */
-  -webkit-filter: grayscale(50%); /* Chrome 19+ & Safari 6+ */
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'saturate\' values=\'0.5\'/></filter></svg>#grayscale"); /* Firefox 10+ */
+	filter: gray alpha(opacity=50); /* IE6-9 */
+	-webkit-filter: grayscale(50%); /* Chrome 19+ & Safari 6+ */
 }
 %gray-zero{
-  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
-  -webkit-filter: grayscale(0%);
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+	-webkit-filter: grayscale(0%);
 }
-
+@mixin unselectable() {
+    -webkit-touch-callout : none;
+    -webkit-user-select   : none;
+    -khtml-user-select    : none;
+    -moz-user-select      : none;
+    -ms-user-select       : none;
+    user-select           : none;
+}
+@mixin prevent-text(){
+   -ms-word-break: break-all;
+       word-break: break-all;
+       word-break: break-word;
+  -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+          hyphens: auto;
+}
+@mixin selection {
+	& ::selection {
+		@content;
+	}
+	& ::-moz-selection {
+		@content;
+	}
+}
 // sized sprites
 @mixin image-size($path){
-  width: image-width($path);
-  height: image-height($path);
+	width: image-width($path);
+	height: image-height($path);
 }
 @mixin sized-sprite($map, $sprite){
-  background: sprite($map, $sprite) no-repeat;
-  @include image-size(sprite-file($map, $sprite));
+	background: sprite($map, $sprite) no-repeat;
+	@include image-size(sprite-file($map, $sprite));
 }
