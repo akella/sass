@@ -11,7 +11,7 @@ Structure
 =============
 _/sass/libs_ - all the mixins and libs needed for us.
 
-_/sass/_base.scss_ - agregates all those libraries and some common styles
+_/sass/_mixins.scss_ - agregates all those libraries and some common styles
 
 _/sass/screen.scss_ - agregates all .scss files.
 
