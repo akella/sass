@@ -1,4 +1,5 @@
-My SASS template (by akella), or boilerplate, whatever =)
+My Sass template (by akella), or boilerplate, whatever =)
+I should invent some
 =============
 
 I'm using this as a starting template for almost any project now.
@@ -15,3 +16,12 @@ _/sass/_mixins.scss_ - agregates all those libraries and some common styles
 
 _/sass/screen.scss_ - agregates all .scss files.
 
+Naming blocks
+=============
+I use BEM naming, meaning _.block_ for independent block. _.block_element_ for elements inside that block. And _.block_modification_ for modification of the block.
+
+_layouts.css_ consists of all the columns-header-footer stuff, all with _.l-*_ prefixes. So you know its layout.
+
+States of the blocks use prefix _.is-*_. For example .is-running, .is-hidden, .is-open.
+
+Hooks for js should use prefix _.js-*_.
