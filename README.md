@@ -17,7 +17,7 @@ _/sass/screen.scss_ - agregates all .scss files.
 
 Naming blocks
 =============
-I use BEM naming, meaning _.block_ for independent block. _`.block__element`_ for elements inside that block. And _.block_modification_ for modification of the block.
+I use BEM naming, meaning _.block_ for independent block. .block__element for elements inside that block. And _.block_modification_ for modification of the block.
 
 _layouts.css_ consists of all the columns-header-footer stuff, all with _.l-*_ prefixes. So you know its layout.
 
