@@ -16,16 +16,17 @@
 //       @include rotate(360);
 //    }
 // }
-// =========animation usage
+// =======animation usage
 // body:hover{
 // 	@include animation(rotate 200s linear infinite);
 // }
-// ========gradient example
+// =======gradient example
 // body{
 // @include background-image(linear-gradient(#232323, #5c5c5c));
 // }
-// =========making bw-images
+// =======making bw-images
 // img{@extend %gray;}
+// BTW these comments will not render into css
 
 
 
