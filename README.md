@@ -1,5 +1,4 @@
-My Sass template (by akella), or boilerplate, whatever =)
-I should invent some
+My Sass template (by akella), or boilerplate, whatever =) I should invent some cool name later on.
 =============
 
 I'm using this as a starting template for almost any project now.
