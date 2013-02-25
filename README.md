@@ -9,18 +9,18 @@ You need to have Compass installed for it to work properly.
 
 Structure
 =============
-_/sass/libs_ - all the mixins and libs needed for us.
+`/sass/libs` - all the mixins and libs needed for us.
 
-_/sass/_mixins.scss_ - agregates all those libraries and some common styles
+`/sass/_mixins.scss` - agregates all those libraries and some common styles
 
-_/sass/screen.scss_ - agregates all .scss files.
+`/sass/screen.scss` - agregates all .scss files.
 
 Naming blocks
 =============
-I use BEM naming, meaning _.block_ for independent block. _.block_element_ for elements inside that block. And _.block_modification_ for modification of the block.
+I use BEM naming, meaning `.block` for independent block. `.block__element` for elements inside that block. And `.block_modification` for modification of the block.
 
-_layouts.css_ consists of all the columns-header-footer stuff, all with _.l-*_ prefixes. So you know its layout.
+`layouts.css` consists of all the columns-header-footer stuff, all with `.l-*` prefixes. So you know its layout.
 
-States of the blocks use prefix _.is-*_. For example .is-running, .is-hidden, .is-open.
+States of the blocks use prefix `.is-*`. For example `.is-running`, `.is-hidden`, `.is-open`.
 
-Hooks for js should use prefix _.js-*_.
+Hooks for js should use prefix `.js-*`.
