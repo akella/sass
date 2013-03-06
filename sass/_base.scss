@@ -3,6 +3,8 @@
 @import "lib/mixins";
 @import "lib/animations";
 @import "lib/keyframes";
+@import "lib/media";
+@import "lib/ceaser-easing/ceaser";
 
 // gradients for ie
 $experimental-support-for-svg: true;
