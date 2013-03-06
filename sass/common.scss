@@ -20,14 +20,21 @@
 // body:hover{
 // 	@include animation(rotate 200s linear infinite);
 // }
+//=======animations easing, see easings.net for full list and examples, tnx @ai
+// 	transition: all 1.2s ceaser($ease-in);
+//
 // =======gradient example
 // body{
 // @include background-image(linear-gradient(#232323, #5c5c5c));
 // }
 // =======making bw-images
 // img{@extend %gray;}
-// BTW these comments will not render into css
+//
+// ========= predefined media-queries: https://github.com/paranoida/sass-mediaqueries
+// @min-screen(320){ css goes here}
+// @max-screen(1000), @iphone5, @iphone4, @ipad-retina, @ipad, @hdpi - also available
 
+// BTW these comments will not render into css
 
 
 *{margin:0;padding:0;-webkit-text-size-adjust: none; }
