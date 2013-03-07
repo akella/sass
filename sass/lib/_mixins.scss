@@ -114,6 +114,12 @@ $break-large: 1180px;
      -moz-hyphens: auto;
           hyphens: auto;
 }
+@mixin font-smoothing($val: antialiased) {
+  -webkit-font-smoothing: $val;
+  -moz-font-smoothing: $val;
+  -ms-font-smoothing: $val;
+  -o-font-smoothing: $val;
+}
 @mixin selection {
 	& ::selection {
 		@content;
