@@ -16,12 +16,7 @@ $break-large: 1180px;
   }
 }
 
-// BACKGROUND SIZE
-@mixin background-size($width: 100%, $height: 100%) {
-     -moz-background-size: $width $height;
-  -webkit-background-size: $width $height;
-          background-size: $width $height;
-}
+
 // ROTATE
 @mixin rotate($deg: 0, $m11: 0, $m12: 0, $m21: 0, $m22: 0) {
      -moz-transform: rotate($deg + deg);
@@ -35,12 +30,12 @@ $break-large: 1180px;
 }
 
 // TRANSITION
-@mixin transition($what: all, $length: 1s, $easing: ease-in-out) {
-	-moz-transition:    $what $length $easing;
-	-o-transition:      $what $length $easing;
-	-webkit-transition: $what $length $easing;
-	-ms-transition:     $what $length $easing;
-	transition:         $what $length $easing;
+@mixin transition($what) {
+	-moz-transition:    %what;
+	-o-transition:      %what;
+	-webkit-transition: %what;
+	-ms-transition:     %what;
+	transition:         %what;
 }
 
 // image replacement extend
