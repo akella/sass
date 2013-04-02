@@ -1,8 +1,0 @@
-.button { padding: 9px 14px; font-size: 12px; line-height: normal; border-radius: 5px; display: inline-block; }
-
-.button_large { font-size: 30px; }
-
-.greenbutton { padding: 9px 14px; font-size: 12px; line-height: normal; border-radius: 5px; background: green; color: #fff; text-shadow: 0 -1px 0 black; display: inline-block; }
-.greenbutton i { width: 10px; height: 10px; background: pink; display: inline-block; margin-right: 10px; }
-
-.greenbutton_large { font-size: 30px; }
