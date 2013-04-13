@@ -1,4 +1,4 @@
-// responsive example, needs to be edited
+// responsive example, edit or remove
 $break-small: 500px;
 $break-large: 1180px;
 @mixin respond-to($media) {
@@ -11,22 +11,21 @@ $break-large: 1180px;
 }
 // retina bg
 @mixin retina{
-  @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
-    @content;
-  }
+	@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+		@content;
+	}
 }
 
 
 // ROTATE
 @mixin rotate($deg: 0, $m11: 0, $m12: 0, $m21: 0, $m22: 0) {
-     -moz-transform: rotate($deg + deg);
-       -o-transform: rotate($deg + deg);
-  -webkit-transform: rotate($deg + deg);
-      -ms-transform: rotate($deg + deg);
-          transform: rotate($deg + deg);
-             filter: progid:DXImageTransform.Microsoft.Matrix(
-                     M11=$m11, M12=$m12,M21=$m21, M22=$m22, sizingMethod='auto expand');
-               zoom: 1;
+	-moz-transform: rotate($deg + deg);
+	-o-transform: rotate($deg + deg);
+	-webkit-transform: rotate($deg + deg);
+	-ms-transform: rotate($deg + deg);
+	transform: rotate($deg + deg);
+	filter: progid:DXImageTransform.Microsoft.Matrix(M11=$m11, M12=$m12,M21=$m21, M22=$m22, sizingMethod='auto expand');
+	zoom: 1;
 }
 
 // TRANSITION
@@ -37,22 +36,11 @@ $break-large: 1180px;
 	-ms-transition:     %what;
 	transition:         %what;
 }
-
-// image replacement extend
 %hide-text{
 	font: 0/0 a;
 	text-shadow: none;
 	color: transparent;
 }
-// %clr{
-//   &:after{
-//     content: ".";
-//     display: block;
-//     height: 0;
-//     clear: both;
-//     visibility: hidden;
-//     }
-// }
 %clr{
 	&:before,
 	&:after {
@@ -64,11 +52,7 @@ $break-large: 1180px;
 	}
 	*zoom: 1;
 }
-// placeholder color
 @mixin placeholder-color($color) {
-	&.placeholder {
-		color: $color;
-	}
 	&:-moz-placeholder {
 		color: $color;
 	}
@@ -94,26 +78,26 @@ $break-large: 1180px;
 	-webkit-filter: grayscale(0%);
 }
 @mixin unselectable() {
-    -webkit-touch-callout : none;
-    -webkit-user-select   : none;
-    -khtml-user-select    : none;
-    -moz-user-select      : none;
-    -ms-user-select       : none;
-    user-select           : none;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 @mixin prevent-text(){
-   -ms-word-break: break-all;
-       word-break: break-all;
-       word-break: break-word;
-  -webkit-hyphens: auto;
-     -moz-hyphens: auto;
-          hyphens: auto;
+	-ms-word-break: break-all;
+	word-break: break-all;
+	word-break: break-word;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
 }
 @mixin font-smoothing($val: antialiased) {
-  -webkit-font-smoothing: $val;
-  -moz-font-smoothing: $val;
-  -ms-font-smoothing: $val;
-  -o-font-smoothing: $val;
+	 -webkit-font-smoothing: $val;
+	 -moz-font-smoothing: $val;
+	 -ms-font-smoothing: $val;
+	 -o-font-smoothing: $val;
 }
 @mixin selection {
 	& ::selection {
@@ -131,4 +115,13 @@ $break-large: 1180px;
 @mixin sized-sprite($map, $sprite){
 	background: sprite($map, $sprite) no-repeat;
 	@include image-size(sprite-file($map, $sprite));
+}
+//shortcut
+@mixin s($map, $sprite){
+	background: sprite($map, $sprite) no-repeat;
+	@include image-size(sprite-file($map, $sprite));
+}
+//only image, when dimensions are useless
+@mixin si($map, $sprite){
+	background: sprite($map, $sprite) no-repeat;
 }
