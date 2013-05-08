@@ -7,6 +7,6 @@
 @import "ceaser-easing/ceaser";
 
 // gradients for ie, turn it off to disable svg base64
-$experimental-support-for-svg: true;
+//$experimental-support-for-svg: true;
 // global sprites with padding
 $icons: sprite-map("icons/*.png", $spacing: 10px);

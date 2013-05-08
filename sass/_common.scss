@@ -1,4 +1,3 @@
-@import "lib/base";
 // # SHORT HOWTO
 // ## Sprites
 //     .whatever{
@@ -39,7 +38,7 @@
 // for awesomeness use .🍺 class. Example:
 // .🍺{beer:everything}
 
-
+//*{-webkit-transition: .3s all;}
 
 *{margin:0;padding:0; }
 @include iphone{*{-webkit-text-size-adjust: none;}}
@@ -57,12 +56,6 @@ body{
 // resets
 a img,fieldset{
 	border:none;
-	}
-a{
-	color:#00919e;
-	&:hover{
-
-	}
 }
 // common styles, these could be attached to any block with "@extend %wyswyg;"
 %wyswyg{
