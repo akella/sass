@@ -1,4 +1,4 @@
-// global sprites with padding
+//  sprites with padding
 $icons: sprite-map("icons/*.png", $spacing: 10px);
 
 // sized sprites
@@ -13,9 +13,10 @@ $icons: sprite-map("icons/*.png", $spacing: 10px);
 //shortcut
 @mixin s($sprite, $map: $icons){
 	background: sprite($map, $sprite) no-repeat;
+	//background-image: inline-image('icons/'+$sprite+'.png','image/png'); to switches sprites to base64, elegant
 	@include image-size(sprite-file($map, $sprite));
 }
 //only image, when dimensions are useless
-@mixin si($map, $sprite){
+@mixin si($sprite, $map: $icons){
 	background: sprite($map, $sprite) no-repeat;
 }
