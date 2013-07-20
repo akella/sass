@@ -3,9 +3,11 @@ $break-small: 500px;
 $break-large: 1180px;
 @mixin respond-to($media) {
 	@if $media == pda {
+		// narrower than $width
 		@media only screen and (max-width: $break-small) { @content; }
 	}
 	@else if $media == wide {
+		// wider than $width
 		@media only screen and (min-width: $break-large) { @content; }
 	}
 }
@@ -15,7 +17,9 @@ $break-large: 1180px;
 		@content;
 	}
 }
-
+@mixin r($media){
+	@include respond-to($media);
+}
 
 // ROTATE
 @mixin rotate($deg: 0, $m11: 0, $m12: 0, $m21: 0, $m22: 0) {
