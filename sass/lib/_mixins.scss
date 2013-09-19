@@ -20,7 +20,19 @@ $break-large: 1180px;
 @mixin r($media){
 	@include respond-to($media);
 }
+//fast font-family
+@mixin font($alias, $name){
+	@font-face{
+		font-family: $alias;
+		src: url('fonts/'+$name+'.eot');
+		src: url("fonts/"+$name+".eot?#iefix") format("embedded-opentype"), url("fonts/"+$name+".woff") format("woff"), url("fonts/"+$name+".ttf") format("truetype");
+		font-weight: normal;
+		font-style: normal;
+	}
+}
 
+
++font(black, cytiapro-black-webfont)
 // ROTATE
 @mixin rotate($deg: 0, $m11: 0, $m12: 0, $m21: 0, $m22: 0) {
 	-moz-transform: rotate($deg + deg);

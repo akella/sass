@@ -1,0 +1,88 @@
+// # SHORT HOWTO
+// ## Sprites
+//     .whatever{
+//         @include sized-sprite($icons, badge_hit); //or
+// 	@include s(badge_hit); //gets default value for spritemap as $icons
+//     }
+// ### animation example
+//     @include keyframes(rotate) {
+//        from {
+//           @include rotate(0);
+//        }
+//        to {
+//           @include rotate(360);
+//         }
+//     }
+// ## animation usage
+//     body:hover{
+// 	    @include animation(rotate 200s linear infinite);
+//     }
+// ## animations easing, see easings.net for full list and examples, tnx @ai
+//     transition: all 1.2s ceaser($ease-in);
+// ## gradient example
+//     @include background-image(linear-gradient(#232323, #5c5c5c));
+// ## making bw-images
+//     img{@extend %gray;}
+// ## predefined media-queries: https://github.com/paranoida/sass-mediaqueries
+//     @min-screen(320){ css goes here}
+// @max-screen(1000), @iphone5, @iphone4, @ipad-retina, @ipad, @hdpi - also available
+//
+// ## use cycles
+//     @for $i from 1 through 3 {
+//       .item-#{$i} { width: 2em * $i; }
+//     }
+//     @each $s in a,b,c{
+// 	    #{$s}
+//     }
+// BTW these comments will not render into css
+// for awesomeness use .🍺 class. Example:
+// .🍺{beer:everything}
+
+//*{-webkit-transition: .3s all;}
+
+*
+	margin: 0
+	padding: 0
+
++iphone
+	*
+		-webkit-text-size-adjust: none
+
+
+button::-moz-focus-inner
+	padding: 0
+	border: 0
+
+input[type="submit"]::-moz-focus-inner
+	padding: 0
+	border: 0
+
+body
+	font:
+		family: Arial,sans-serif
+		weight: normal
+		size: 12px
+	line-height: 1.4
+
+// resets
+a img,fieldset
+	border: none
+
+// common styles, these could be attached to any block with "@extend %wyswyg;"
+%wyswyg
+	p
+		margin-bottom: 1em
+	ul,ol
+		margin: 1em 2em
+		list-style: disc
+	ol
+		list-style: decimal
+	blockquote
+		margin: 1em 2em
+	table
+		border-spacing: 0
+		border-collapse: collapse
+		width: 100%
+		td
+			border: 1px solid #ccc
+			padding: 5px
