@@ -20,7 +20,7 @@ $break-large: 1180px;
 @mixin r($media){
 	@include respond-to($media);
 }
-//fast font-family
+//asdfast font-family
 @mixin font($alias, $name){
 	@font-face{
 		font-family: $alias;
