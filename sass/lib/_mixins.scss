@@ -31,8 +31,8 @@ $break-large: 1180px;
 	}
 }
 
+//+font(black, cytiapro-black-webfont)
 
-+font(black, cytiapro-black-webfont)
 // ROTATE
 @mixin rotate($deg: 0, $m11: 0, $m12: 0, $m21: 0, $m22: 0) {
 	-moz-transform: rotate($deg + deg);
