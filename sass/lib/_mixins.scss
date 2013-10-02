@@ -1,7 +1,7 @@
 // responsive example, edit or remove
 $break-small: 500px;
 $break-large: 1180px;
-@mixin respond-to($media) {
+@mixin r($media) {
 	@if $media == pda {
 		// narrower than $width
 		@media only screen and (max-width: $break-small) { @content; }
@@ -17,9 +17,7 @@ $break-large: 1180px;
 		@content;
 	}
 }
-@mixin r($media){
-	@include respond-to($media);
-}
+
 //asdfast font-family
 @mixin font($alias, $name){
 	@font-face{
