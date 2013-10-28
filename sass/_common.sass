@@ -1,26 +1,22 @@
 // # SHORT HOWTO
 // ## Sprites
-//     .whatever{
-//         @include sized-sprite($icons, badge_hit); //or
-// 	@include s(badge_hit); //gets default value for spritemap as $icons
-//     }
+//     .whatever
+//          +sized-sprite($icons, badge_hit) //or
+// 			+s(badge_hit) //gets default value for spritemap as $icons
 // ### animation example
-//     @include keyframes(rotate) {
-//        from {
-//           @include rotate(0);
-//        }
-//        to {
-//           @include rotate(360);
-//         }
-//     }
+//     +include keyframes(rotate)
+//        from
+//           +rotate(0)
+//        to
+//           +rotate(360)
 // ## animation usage
-//     body:hover{
-// 	    @include animation(rotate 200s linear infinite);
-//     }
+//     body:hover
+// 	    +animation(rotate 200s linear infinite)
 // ## animations easing, see easings.net for full list and examples, tnx @ai
-//     transition: all 1.2s ceaser($ease-in);
+//     transition: all 1.2s ceaser($ease-in)
 // ## gradient example
 //     +background-image(linear-gradient(#232323, #5c5c5c));
+//     +g(#232323, #5c5c5c);
 // ## making bw-images
 //     img
 //			@extend %gray
