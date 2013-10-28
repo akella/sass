@@ -1,4 +1,4 @@
-* { margin: 0; padding: 0; }
+* { margin: 0; padding: 0; background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ffffff), color-stop(100%, #000000)); background-image: -webkit-linear-gradient(left, #ffffff, #000000); background-image: -moz-linear-gradient(left, #ffffff, #000000); background-image: -o-linear-gradient(left, #ffffff, #000000); background-image: linear-gradient(left, #ffffff, #000000); }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) { * { -webkit-text-size-adjust: none; } }
 button::-moz-focus-inner { padding: 0; border: 0; }

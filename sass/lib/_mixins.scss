@@ -18,6 +18,13 @@ $break-large: 1180px;
 	}
 }
 
+//simple gradient
+@mixin g($color1, $color2){
+	@include background-image(linear-gradient($color1, $color2));
+}
+@mixin gh($color1, $color2){
+	@include background-image(linear-gradient(left, $color1, $color2));
+}
 //asdfast font-family
 @mixin font($alias, $name){
 	@font-face{
