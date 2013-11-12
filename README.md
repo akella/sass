@@ -1,5 +1,6 @@
-My Sass template (by akella), or boilerplate, whatever =) I should invent some cool name later on.
+Sass Boilerplate for generic CSS/HTML
 =============
+Done by akella with kind of help of Coderiver coding company
 
 I'm using this as a starting template for almost any project now.
 It includes sprites, assorted mixins (aka code snippets), file structure, jquery+cycle+scrollto (most usable these days).
@@ -9,11 +10,11 @@ You need to have Compass installed for it to work properly.
 
 Structure
 =============
-`/sass/libs` - all the mixins and libs needed for us.
-
-`/sass/_mixins.scss` - agregates all those libraries and some common styles
+`/sass/lib/base` - all the mixins and libs needed for us.
 
 `/sass/screen.scss` - agregates all .scss files.
+
+`/sass/main.scss` - styles for the mainpage.
 
 Naming blocks
 =============
