@@ -1,6 +1,6 @@
 Sass Boilerplate for generic CSS/HTML
 =============
-Done by akella with kind of help of Coderiver coding company
+Done by akella with kind help of Coderiver guys.
 
 I'm using this as a starting template for almost any project now.
 It includes sprites, assorted mixins (aka code snippets), file structure, jquery+cycle+scrollto (most usable these days).
