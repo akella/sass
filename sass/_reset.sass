@@ -1,86 +1,40 @@
-// # SHORT HOWTO
-// ## Sprites
-//     .whatever
-//          +sized-sprite($icons, coderiver) //or
-// 			+s(codedby) //gets default value for spritemap as $icons
-// ### animation example
-//     +keyframes(rotate)
-//        from
-//           +rotate(0)
-//        to
-//           +rotate(360)
-// ## animation usage
-//     body:hover
-// 	    +animation(rotate 200s linear infinite)
-// ## animations easing, see easings.net for full list and examples, tnx @ai
-//     transition: all 1.2s ceaser($ease-in)
-// ## gradient example
-//     +background-image(linear-gradient(#232323, #5c5c5c));
-//     +g(#232323, #5c5c5c);
-// ## making bw-images
-//     img
-//			@extend %gray
-// ## predefined media-queries: https://github.com/paranoida/sass-mediaqueries
-//     +min-screen(320)
-//			display: none
-// +max-screen(1000), +iphone5, +iphone4, +ipad-retina, +ipad, +hdpi - also available
-//
-// ## use cycles
-//     @for $i from 1 through 3
-//       .item-#{$i}
-//			width: 2em * $i;
-//     @each $s in a,b,c
-// 	    	#{$s}
-//				display: none
-// ## fonts 
-// Save fonts to /css/fonts, after that write:
-// 		+font(black, cytiapro-black-webfont) 
-// Now you can use this font as:
-// 		font-family: Black
-// BTW these comments will not render into css
-
-*
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5,
+h6, p, blockquote, pre,a, abbr, acronym, address, big,
+cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small,
+strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt,
+dd, ol, ul, li,fieldset, form, label, legend,table, caption,
+tbody, tfoot, thead, tr, th, td,article, aside, canvas, details,
+embed, figure, figcaption, footer, header, hgroup, menu, nav,
+output, ruby, section, summary,time, mark, audio, video
+	margin: 0 
+	padding: 0
+	border: 0
+	vertical-align: baseline
+body, html
+	height: 100%    
+img,fieldset, a img
+	border: none
+input[type="submit"],
+button
+	cursor: pointer
+	&::-moz-focus-inner
+		padding: 0
+		border: 0
+textarea 
+	overflow: auto
+input, button 
 	margin: 0
 	padding: 0
-
+	border: 0
+input, textarea, select,button,
+h1,h2,h3,h4,h5,h6,a,span,a:focus 
+	outline: none
+ul,ol    
+	list-style-type: none 
 +iphone
-	*
+	*   
 		-webkit-text-size-adjust: none
-
-
-button::-moz-focus-inner
-	padding: 0
-	border: 0
-
-input[type="submit"]::-moz-focus-inner
-	padding: 0
-	border: 0
-body
-	font:
-		family: Arial,sans-serif
-		weight: normal
-		size: 12px
-	line-height: 1.4
-
-// resets
-a img,fieldset
-	border: none
-
-// common styles, these could be attached to any block with "@extend %wyswyg;"
-%wyswyg
-	p
-		margin-bottom: 1em
-	ul,ol
-		margin: 1em 2em
-		list-style: disc
-	ol
-		list-style: decimal
-	blockquote
-		margin: 1em 2em
-	table
-		border-spacing: 0
-		border-collapse: collapse
-		width: 100%
-		td
-			border: 1px solid #ccc
-			padding: 5px
+table
+	border-spacing: 0
+	border-collapse: collapse
+	width: 100%
