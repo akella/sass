@@ -16,6 +16,10 @@ $icons: sprite-map("icons/*.png", $spacing: 10px);
 	//background-image: inline-image('icons/'+$sprite+'.png','image/png'); to switches sprites to base64, elegant
 	@include image-size(sprite-file($map, $sprite));
 }
+//only position of sprite, to remove flicker effect in chrome
+@mixin sp($sprite, $map: $icons){
+	background-position: sprite-position($map, $sprite);
+}
 //only image, when dimensions are useless
 @mixin si($sprite, $map: $icons){
 	background: sprite($map, $sprite) no-repeat;
